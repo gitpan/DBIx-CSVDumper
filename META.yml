@@ -3,8 +3,8 @@ abstract: 'dumping database (DBI) data into a CSV.'
 author:
   - 'Masayuki Matsuki <y.songmu@gmail.com>'
 build_requires:
-  DBI: 0
   Test::More: 0.98
+  Test::Requires: 0
 configure_requires:
   CPAN::Meta: 0
   CPAN::Meta::Prereqs: 0
@@ -29,7 +29,7 @@ no_index:
 provides:
   DBIx::CSVDumper:
     file: lib/DBIx/CSVDumper.pm
-    version: 0.01
+    version: 0.02
 requires:
   Encode: 0
   Text::CSV: 0
@@ -37,4 +37,4 @@ resources:
   bugtracker: https://github.com/Songmu/p5-DBIx-CSVDumper/issues
   homepage: https://github.com/Songmu/p5-DBIx-CSVDumper
   repository: git://github.com/Songmu/p5-DBIx-CSVDumper.git
-version: 0.01
+version: 0.02
